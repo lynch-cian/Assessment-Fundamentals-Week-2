@@ -1,14 +1,23 @@
+"""Trainee & Assessment class"""
+
 from datetime import date
 
 
 class Trainee():
-    def __init__(self, name: str, email: str, date_of_birth: date, assessments: list[Assessment] = []):
+    """Trainee class"""
+
+    def __init__(self, name: str, email: str, date_of_birth: date,
+                 assessments: list[Assessment] = None):
         self.name = name
         self.email = email
         self.date_of_birth = date_of_birth
-        self.assessments = []
+        if assessments is None:
+            self.assessments = []
+        else:
+            self.assessments = assessments
 
     def get_age(self) -> int:
+        """Returns trainee's age"""
         today = date.today()
         age = int(today.year) - self.date_of_birth.year - \
             ((int(today.month), int(today.day)) <
@@ -16,10 +25,11 @@ class Trainee():
         return age
 
     def add_assessment(self, assessment: Assessment) -> None:
+        """Adds assessments to trainee"""
         self.assessments.append(assessment)
-        return None
 
     def get_assessment(self, name: str) -> None:
+        """Finds assessment by name"""
         for assessment in self.assessments:
             if assessment.name == name:
                 return assessment
@@ -27,6 +37,8 @@ class Trainee():
 
 
 class Assessment():
+    """Assessment class"""
+
     def __init__(self, name: str, type: str, score: float):
         self.name = name
         allowed_types = ["multiple-choice", "technical", "presentation"]
@@ -34,7 +46,7 @@ class Assessment():
             self.type = type
         else:
             raise ValueError("Type must be in allowed types.")
-        if score >= 0 and score <= 100:
+        if 0 >= score <= 100:
             self.score = score
         else:
             raise ValueError("Score must be between 0-100")
