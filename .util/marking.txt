@@ -1,10 +1,13 @@
 ============================= test session starts ==============================
 platform linux -- Python 3.14.3, pytest-9.0.2, pluggy-1.6.0
 rootdir: /home/runner/work/Assessment-Fundamentals-Week-2/Assessment-Fundamentals-Week-2
-collected 16 items / 1 error
+collected 24 items
 
-!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
-=============================== 1 error in 0.12s ===============================
+Level-1/test_one_task.py .........                                       [ 37%]
+Level-2/test_two_task.py .......                                         [ 66%]
+Level-3/test_three_task.py ........                                      [100%]
+
+============================== 24 passed in 0.03s ==============================
 ************* Module task_one
 Level-1/task_one.py:5:0: C0301: Line too long (103/100) (line-too-long)
 Level-1/task_one.py:1:0: C0114: Missing module docstring (missing-module-docstring)
@@ -47,17 +50,46 @@ Level-2/task_two.py:95:4: W0231: __init__ method from base class 'Assessment' is
 Level-2/task_two.py:100:4: C0116: Missing function or method docstring (missing-function-docstring)
 Level-2/task_two.py:94:0: R0903: Too few public methods (1/2) (too-few-public-methods)
 ************* Module task_three
+Level-3/task_three.py:22:0: C0325: Unnecessary parens after 'return' keyword (superfluous-parens)
+Level-3/task_three.py:35:0: C0301: Line too long (103/100) (line-too-long)
 Level-3/task_three.py:1:0: C0114: Missing module docstring (missing-module-docstring)
-Level-3/task_three.py:17:0: C0115: Missing class docstring (missing-class-docstring)
-Level-3/task_three.py:17:0: R0903: Too few public methods (0/2) (too-few-public-methods)
-Level-3/task_three.py:25:0: C0115: Missing class docstring (missing-class-docstring)
-Level-3/task_three.py:27:23: W0621: Redefining name 'questions' from outer scope (line 41) (redefined-outer-name)
-Level-3/task_three.py:27:51: W0622: Redefining built-in 'type' (redefined-builtin)
-Level-3/task_three.py:25:0: R0903: Too few public methods (0/2) (too-few-public-methods)
-Level-3/task_three.py:33:0: C0115: Missing class docstring (missing-class-docstring)
-Level-3/task_three.py:35:23: W0621: Redefining name 'quiz' from outer scope (line 48) (redefined-outer-name)
-Level-3/task_three.py:33:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+Level-3/task_three.py:7:0: C0115: Missing class docstring (missing-class-docstring)
+Level-3/task_three.py:8:23: W0621: Redefining name 'quiz' from outer scope (line 144) (redefined-outer-name)
+Level-3/task_three.py:10:11: C0121: Comparison 'assessment == None' should be 'assessment is None' (singleton-comparison)
+Level-3/task_three.py:15:4: C0116: Missing function or method docstring (missing-function-docstring)
+Level-3/task_three.py:24:4: C0116: Missing function or method docstring (missing-function-docstring)
+Level-3/task_three.py:31:15: E0606: Possibly using variable 'assessment' before assignment (possibly-used-before-assignment)
+Level-3/task_three.py:34:0: C0115: Missing class docstring (missing-class-docstring)
+Level-3/task_three.py:35:4: W0102: Dangerous default value [] as argument (dangerous-default-value)
+Level-3/task_three.py:47:4: C0116: Missing function or method docstring (missing-function-docstring)
+Level-3/task_three.py:54:4: C0116: Missing function or method docstring (missing-function-docstring)
+Level-3/task_three.py:54:4: R1711: Useless return at end of function or method (useless-return)
+Level-3/task_three.py:60:4: C0116: Missing function or method docstring (missing-function-docstring)
+Level-3/task_three.py:66:4: C0116: Missing function or method docstring (missing-function-docstring)
+Level-3/task_three.py:66:37: W0622: Redefining built-in 'type' (redefined-builtin)
+Level-3/task_three.py:76:0: C0115: Missing class docstring (missing-class-docstring)
+Level-3/task_three.py:77:34: W0622: Redefining built-in 'type' (redefined-builtin)
+Level-3/task_three.py:83:11: R1716: Simplify chained comparison between the operands (chained-comparison)
+Level-3/task_three.py:76:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+Level-3/task_three.py:89:0: C0115: Missing class docstring (missing-class-docstring)
+Level-3/task_three.py:90:4: W0231: __init__ method from base class 'Assessment' is not called (super-init-not-called)
+Level-3/task_three.py:95:4: C0116: Missing function or method docstring (missing-function-docstring)
+Level-3/task_three.py:89:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+Level-3/task_three.py:99:0: C0115: Missing class docstring (missing-class-docstring)
+Level-3/task_three.py:100:4: W0231: __init__ method from base class 'Assessment' is not called (super-init-not-called)
+Level-3/task_three.py:105:4: C0116: Missing function or method docstring (missing-function-docstring)
+Level-3/task_three.py:99:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+Level-3/task_three.py:109:0: C0115: Missing class docstring (missing-class-docstring)
+Level-3/task_three.py:110:4: W0231: __init__ method from base class 'Assessment' is not called (super-init-not-called)
+Level-3/task_three.py:115:4: C0116: Missing function or method docstring (missing-function-docstring)
+Level-3/task_three.py:109:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+Level-3/task_three.py:119:0: C0115: Missing class docstring (missing-class-docstring)
+Level-3/task_three.py:119:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+Level-3/task_three.py:127:0: C0115: Missing class docstring (missing-class-docstring)
+Level-3/task_three.py:129:23: W0621: Redefining name 'questions' from outer scope (line 137) (redefined-outer-name)
+Level-3/task_three.py:129:51: W0622: Redefining built-in 'type' (redefined-builtin)
+Level-3/task_three.py:127:0: R0903: Too few public methods (0/2) (too-few-public-methods)
 
 ------------------------------------------------------------------
-Your code has been rated at 6.23/10 (previous run: 6.23/10, +0.00)
+Your code has been rated at 6.17/10 (previous run: 6.17/10, +0.00)
 
