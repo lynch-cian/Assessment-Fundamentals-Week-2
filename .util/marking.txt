@@ -4,12 +4,13 @@ rootdir: /home/runner/work/Assessment-Fundamentals-Week-2/Assessment-Fundamental
 collected 9 items / 2 errors
 
 !!!!!!!!!!!!!!!!!!! Interrupted: 2 errors during collection !!!!!!!!!!!!!!!!!!!!
-============================== 2 errors in 0.13s ===============================
+============================== 2 errors in 0.12s ===============================
 ************* Module task_one
 Level-1/task_one.py:5:0: C0301: Line too long (103/100) (line-too-long)
 Level-1/task_one.py:1:0: C0114: Missing module docstring (missing-module-docstring)
 Level-1/task_one.py:4:0: C0115: Missing class docstring (missing-class-docstring)
 Level-1/task_one.py:5:4: W0102: Dangerous default value [] as argument (dangerous-default-value)
+Level-1/task_one.py:5:67: W0613: Unused argument 'assessments' (unused-argument)
 Level-1/task_one.py:11:4: C0116: Missing function or method docstring (missing-function-docstring)
 Level-1/task_one.py:18:4: C0116: Missing function or method docstring (missing-function-docstring)
 Level-1/task_one.py:18:4: R1711: Useless return at end of function or method (useless-return)
@@ -37,5 +38,5 @@ Level-3/task_three.py:35:23: W0621: Redefining name 'quiz' from outer scope (lin
 Level-3/task_three.py:33:0: R0903: Too few public methods (0/2) (too-few-public-methods)
 
 ------------------------------------------------------------------
-Your code has been rated at 3.48/10 (previous run: 3.48/10, +0.00)
+Your code has been rated at 3.33/10 (previous run: 3.33/10, +0.00)
 
