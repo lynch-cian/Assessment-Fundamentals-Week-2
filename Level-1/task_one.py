@@ -2,7 +2,7 @@ from datetime import date
 
 
 class Trainee():
-    def __init__(self, name: str, email: str, date_of_birth: date, assessments: list[Assessment]):
+    def __init__(self, name: str, email: str, date_of_birth: date, assessments: list[Assessment] = []):
         self.name = name
         self.email = email
         self.date_of_birth = date_of_birth
