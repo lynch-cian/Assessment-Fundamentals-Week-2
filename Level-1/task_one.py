@@ -6,7 +6,7 @@ class Trainee():
         self.name = name
         self.email = email
         self.date_of_birth = date_of_birth
-        self.assessments = assessments
+        self.assessments = []
 
     def get_age(self) -> int:
         today = date.today()
