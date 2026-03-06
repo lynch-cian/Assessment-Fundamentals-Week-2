@@ -49,13 +49,13 @@ def test_is_assessment_2():
 
 
 def test_add_assessment_value_error():
-    trainee = Trainee("Sigma", "test", date.today())
+    trainee = Trainee("Sigma", "test@test.com", date.today())
     with pytest.raises(TypeError):
         trainee.add_assessment({})
 
 
 def test_get_assessment_of_type():
-    trainee = Trainee("Sigma", "test", date.today())
+    trainee = Trainee("Sigma", "test@test.com", date.today())
     assessment1 = MultipleChoiceAssessment("Python Basics", 20)
     assessment2 = PresentationAssessment("Python Basics", 20)
     assessment3 = MultipleChoiceAssessment("Python Basics", 20)
