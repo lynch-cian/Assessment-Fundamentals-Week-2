@@ -46,7 +46,7 @@ class Assessment():
             self.type = type
         else:
             raise ValueError("Type must be in allowed types.")
-        if 0 >= score <= 100:
+        if 0 <= score <= 100:
             self.score = score
         else:
             raise ValueError("Score must be between 0-100")

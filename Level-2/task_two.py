@@ -16,10 +16,6 @@ class Trainee():
         self.email = email
         self.date_of_birth = date_of_birth
         if assessments is None:
-            for assessment in assessments:
-                if not isinstance(assessment, Assessment):
-                    raise TypeError(
-                        "All assessments must be subclass of Assessment.")
             self.assessments = []
         else:
             self.assessments = assessments

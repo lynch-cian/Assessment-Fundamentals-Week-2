@@ -1,13 +1,13 @@
 """Task 3"""
 from datetime import date
 
-allowed_types = ["multiple-choice", "technical", "presentation"]
+allowed_types = ['multiple-choice', 'technical', 'presentation']
 
 
 class Marking():
     """Marking class"""
 
-    def __init__(self, quiz: Quiz, assessment: Assessment = None) -> None:
+    def __init__(self, quiz: Quiz, assessment: str = None) -> None:
         self._quiz = quiz
         if assessment is None:
             self.assessment = self.generate_assessment()
@@ -27,14 +27,12 @@ class Marking():
     def generate_assessment(self) -> Assessment:
         """Returns Assessment object with correct type"""
         if self._quiz.type == allowed_types[0]:
-            assessment = MultipleChoiceAssessment(self._quiz.name)
+            return MultipleChoiceAssessment(self._quiz.name)
         if self._quiz.type == allowed_types[1]:
-            assessment = TechnicalAssessment(self._quiz.name)
+            return TechnicalAssessment(self._quiz.name)
         if self._quiz.type == allowed_types[2]:
-            assessment = PresentationAssessment(self._quiz.name)
-        else:
-            raise ValueError("Must be correct type.")
-        return assessment
+            return PresentationAssessment(self._quiz.name)
+        raise ValueError("Must be correct type.")
 
 
 class Trainee():
