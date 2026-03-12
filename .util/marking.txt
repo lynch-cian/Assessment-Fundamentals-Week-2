@@ -3,41 +3,41 @@ platform linux -- Python 3.14.3, pytest-9.0.2, pluggy-1.6.0
 rootdir: /home/runner/work/Assessment-Fundamentals-Week-2/Assessment-Fundamentals-Week-2
 collected 24 items
 
-Level-1/test_one_task.py .FFF.FF.F                                       [ 37%]
-Level-2/test_two_task.py .....FF                                         [ 66%]
-Level-3/test_three_task.py FFFFFFFF                                      [100%]
+Level-1/test_one_task.py .........                                       [ 37%]
+Level-2/test_two_task.py .......                                         [ 66%]
+Level-3/test_three_task.py ........                                      [100%]
 
-========================= 16 failed, 8 passed in 0.04s =========================
+============================== 24 passed in 0.04s ==============================
 ************* Module task_one
 Level-1/task_one.py:42:34: W0622: Redefining built-in 'type' (redefined-builtin)
 Level-1/task_one.py:39:0: R0903: Too few public methods (0/2) (too-few-public-methods)
 ************* Module task_two
-Level-2/task_two.py:41:4: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
-Level-2/task_two.py:47:37: W0622: Redefining built-in 'type' (redefined-builtin)
-Level-2/task_two.py:61:34: W0622: Redefining built-in 'type' (redefined-builtin)
-Level-2/task_two.py:58:0: R0903: Too few public methods (0/2) (too-few-public-methods)
-Level-2/task_two.py:76:4: W0231: __init__ method from base class 'Assessment' is not called (super-init-not-called)
-Level-2/task_two.py:73:0: R0903: Too few public methods (1/2) (too-few-public-methods)
-Level-2/task_two.py:89:4: W0231: __init__ method from base class 'Assessment' is not called (super-init-not-called)
-Level-2/task_two.py:86:0: R0903: Too few public methods (1/2) (too-few-public-methods)
-Level-2/task_two.py:102:4: W0231: __init__ method from base class 'Assessment' is not called (super-init-not-called)
-Level-2/task_two.py:99:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+Level-2/task_two.py:37:4: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
+Level-2/task_two.py:43:37: W0622: Redefining built-in 'type' (redefined-builtin)
+Level-2/task_two.py:57:34: W0622: Redefining built-in 'type' (redefined-builtin)
+Level-2/task_two.py:54:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+Level-2/task_two.py:72:4: W0231: __init__ method from base class 'Assessment' is not called (super-init-not-called)
+Level-2/task_two.py:69:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+Level-2/task_two.py:85:4: W0231: __init__ method from base class 'Assessment' is not called (super-init-not-called)
+Level-2/task_two.py:82:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+Level-2/task_two.py:98:4: W0231: __init__ method from base class 'Assessment' is not called (super-init-not-called)
+Level-2/task_two.py:95:0: R0903: Too few public methods (1/2) (too-few-public-methods)
 ************* Module task_three
-Level-3/task_three.py:10:23: W0621: Redefining name 'quiz' from outer scope (line 172) (redefined-outer-name)
-Level-3/task_three.py:80:37: W0622: Redefining built-in 'type' (redefined-builtin)
-Level-3/task_three.py:94:34: W0622: Redefining built-in 'type' (redefined-builtin)
-Level-3/task_three.py:91:0: R0903: Too few public methods (0/2) (too-few-public-methods)
-Level-3/task_three.py:109:4: W0231: __init__ method from base class 'Assessment' is not called (super-init-not-called)
-Level-3/task_three.py:106:0: R0903: Too few public methods (1/2) (too-few-public-methods)
-Level-3/task_three.py:122:4: W0231: __init__ method from base class 'Assessment' is not called (super-init-not-called)
-Level-3/task_three.py:119:0: R0903: Too few public methods (1/2) (too-few-public-methods)
-Level-3/task_three.py:135:4: W0231: __init__ method from base class 'Assessment' is not called (super-init-not-called)
-Level-3/task_three.py:132:0: R0903: Too few public methods (1/2) (too-few-public-methods)
-Level-3/task_three.py:145:0: R0903: Too few public methods (0/2) (too-few-public-methods)
-Level-3/task_three.py:157:23: W0621: Redefining name 'questions' from outer scope (line 165) (redefined-outer-name)
-Level-3/task_three.py:157:51: W0622: Redefining built-in 'type' (redefined-builtin)
-Level-3/task_three.py:154:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+Level-3/task_three.py:10:23: W0621: Redefining name 'quiz' from outer scope (line 170) (redefined-outer-name)
+Level-3/task_three.py:78:37: W0622: Redefining built-in 'type' (redefined-builtin)
+Level-3/task_three.py:92:34: W0622: Redefining built-in 'type' (redefined-builtin)
+Level-3/task_three.py:89:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+Level-3/task_three.py:107:4: W0231: __init__ method from base class 'Assessment' is not called (super-init-not-called)
+Level-3/task_three.py:104:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+Level-3/task_three.py:120:4: W0231: __init__ method from base class 'Assessment' is not called (super-init-not-called)
+Level-3/task_three.py:117:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+Level-3/task_three.py:133:4: W0231: __init__ method from base class 'Assessment' is not called (super-init-not-called)
+Level-3/task_three.py:130:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+Level-3/task_three.py:143:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+Level-3/task_three.py:155:23: W0621: Redefining name 'questions' from outer scope (line 163) (redefined-outer-name)
+Level-3/task_three.py:155:51: W0622: Redefining built-in 'type' (redefined-builtin)
+Level-3/task_three.py:152:0: R0903: Too few public methods (0/2) (too-few-public-methods)
 
 ------------------------------------------------------------------
-Your code has been rated at 8.80/10 (previous run: 8.80/10, +0.00)
+Your code has been rated at 8.78/10 (previous run: 8.78/10, +0.00)
 
